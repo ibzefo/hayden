@@ -22,7 +22,7 @@ body {
     position: fixed;
     top: 0;
     left: 50%;
-    transform: translateX(-13.5%); /* Center horizontally */
+    transform: translateX(-13.5%); 
     background-color: #2f3542;
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ ul li a:hover {
     font-weight: 600;
     min-width: 280px;
     position: relative;
-    margin-top: 20px; /* Adjust the margin to provide space below the additional text */
+    margin-top: 20px; 
 }
 
 .animated-text span {
@@ -110,7 +110,7 @@ ul li a:hover {
         content: "1B Management Eng"
     }
     21%, 40% {
-        content: "Always Learning";
+        content: "Product Enthusiast";
     }
     41%, 60% {
         content: "Adaptable Leader";
