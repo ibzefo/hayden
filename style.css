@@ -1,1 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2f3542;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-13.5%); /* Center horizontally */
+    background-color: #2f3542;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu {
+    width: 100%; 
+    max-width: 1200px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: rgb(255, 172, 28);
+}
+
+.additional-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    position: relative;
+    margin-top: -50px; 
+}
+
+.animated-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    position: relative;
+    margin-top: 20px; /* Adjust the margin to provide space below the additional text */
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Welcome To My Page!";
+    color: #ff9844;
+    animation: words 30s infinite;
+    position: relative;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #2f3542;
+    border-left: 2px solid #ff9844;
+    right: -8px;
+    animation: cursor 0.9s infinite, typing 30s steps(30) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "1B Management Eng"
+    }
+    21%, 40% {
+        content: "Always Learning";
+    }
+    41%, 60% {
+        content: "Adaptable Leader";
+    }
+    61%, 80% {
+        content: "Making Cool Things :)";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%, 100% {
+        width: calc(100% + 8px); 
+    }
+}
+
+
+.download-button {
+    margin-top: 110px; 
+    padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff7f50; 
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out;
+}
+
+
+
 
